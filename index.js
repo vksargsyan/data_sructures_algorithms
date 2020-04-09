@@ -1,6 +1,8 @@
 const twoNumbersOfSum = require('./01_two_numbers_of_sum');
 const findClosestValueInBinarySearchTree = require('./02_find_closest_value_in_binary_search_tree');
 const branchSums = require('./03_branch_sums');
+const nthFibonacci = require('./05_nth_fibonacci');
+// const depthFirstSearch = require('./04_depth_first_search');
 
 const BST = require('./BST');
 
@@ -23,7 +25,10 @@ for (let n of [8, 3, 10, 1, 6, 14, 4, 7, 13]) {
   tree2.insert(n);
 }
 
-console.log(JSON.stringify(tree2));
-
 const a3 = branchSums(tree2.root);
 console.log('Branch Sum in BST: ', a3);
+
+// ---------------
+
+const a4 = nthFibonacci(6);
+console.log('Nth Fibonacci: ', a4);

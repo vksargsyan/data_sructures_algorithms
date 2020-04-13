@@ -2,6 +2,8 @@ const twoNumbersOfSum = require('./01_two_numbers_of_sum');
 const findClosestValueInBinarySearchTree = require('./02_find_closest_value_in_binary_search_tree');
 const branchSums = require('./03_branch_sums');
 const nthFibonacci = require('./05_nth_fibonacci');
+const productSum = require('./06_product_sum');
+const binarySearch = require('./07_binary_search');
 // const depthFirstSearch = require('./04_depth_first_search');
 
 const BST = require('./BST');
@@ -32,3 +34,13 @@ console.log('Branch Sum in BST: ', a3);
 
 const a4 = nthFibonacci(6);
 console.log('Nth Fibonacci: ', a4);
+
+// ---------------
+
+const a5 = productSum([5, 2, [7, -1], 3, [6, [-13, 8], 4]]);
+console.log('Product Sum ', a5);
+
+// ---------------
+
+const a6 = binarySearch([0, 1, 21, 33, 45, 49, 61, 71, 72, 73], 33);
+console.log(a6);
